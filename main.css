@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0 0 15px;
+  padding: 5px 10px;
+  width: 100%;
+
+  background: grey;
+  color: #fff;
+}
+
+header {
+  height: 100px;
+}
+
+nav {
+  height: 80px;
+}
+
+main {
+  height: 400px;
+}
+
+footer {
+  margin: 0;
+  height: 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none
+}
+
+a,
+a:visited {
+  color: white;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
