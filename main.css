@@ -1,10 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 header,
 nav,
 main,
+aside,
 footer {
   margin: 0 0 15px;
   padding: 5px 10px;
@@ -26,12 +33,17 @@ main {
   height: 400px;
 }
 
+aside {
+  height: 300px
+}
+
 footer {
   margin: 0;
   height: 150px;
 }
 
 h1 {
+  margin: 0;
   text-align: center;
 }
 
@@ -48,4 +60,68 @@ a:visited {
 
 a:hover {
   color: green;
+}
+
+/* Medium Styles */
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 3fr auto;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "main main . aside"
+      "footer footer footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 2fr;
+    grid-template-areas:
+      "header header header nav nav"
+      "main main main nav nav"
+      "main main main aside aside"
+      "footer footer footer footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
 }
