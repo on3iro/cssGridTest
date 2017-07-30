@@ -17,29 +17,39 @@ footer {
   padding: 5px 10px;
   width: 100%;
 
-  background: grey;
   color: #fff;
 }
 
 header {
   height: 100px;
+
+  background: #144c63;
 }
 
 nav {
   height: 80px;
+
+  background: #e9a004;
 }
 
 main {
   height: 400px;
+
+  background: #f8eedd;
+  color: #0e2536;
 }
 
 aside {
-  height: 300px
+  height: 300px;
+
+  background: #728185;
 }
 
 footer {
   margin: 0;
   height: 150px;
+
+  background: #0e2536;
 }
 
 h1 {
